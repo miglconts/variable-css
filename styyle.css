@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Tula';
+    src: url(TulaVF.ttf) format('truetype-variations');
+    font-weight: 30 320;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 150px;
+    color: rgb(224, 125, 11);
+    animation-name: variacion, colores;
+    animation-duration: 3s;
+    animation-iteration-count:infinite;
+    
+}
+h1:hover {
+    animation-play-state: paused;
+}
+
+html {
+    font-family: 'Tula', Verdana, sans-serif;
+  }
+body {
+    text-align: center;
+    width: 100%
+}
+.typenerd {
+    text-transform: uppercase;
+}
+
+@keyframes variacion {
+    0% {
+        font-weight: 30;
+    }
+    50% {
+        font-weight: 320;
+    } 
+    100% {
+        font-weight: 30;
+    }
+}
+
+@keyframes colores {
+    0% {
+        color: rgb(224, 125, 11);
+    }
+    50% {
+        color: rgb(11, 43, 224);
+    } 
+    100% {
+        color: rgb(224, 125, 11);
+    }
+}
