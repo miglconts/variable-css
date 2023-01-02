@@ -1,53 +1,37 @@
 @font-face {
-    font-family: 'Tula';
-    src: url(TulaVF.ttf) format('truetype-variations');
-    font-weight: 30 320;
+  src: url("Letrastica-VFVF.woff2") format("woff2");
+  font-family: "Letrastica";
+  font-weight: 0 100;
+  font-style: normal;
+}
+:root {
+  --wght: 0;
 }
 
-h1 {
-    font-weight: 200;
-    font-size: 150px;
-    color: rgb(224, 125, 11);
-    animation-name: variacion, colores;
-    animation-duration: 3s;
-    animation-iteration-count:infinite;
-    
-}
-h1:hover {
-    animation-play-state: paused;
+body{
+  display: flex;
+  flex-direction: column;
+
 }
 
-html {
-    font-family: 'Tula', Verdana, sans-serif;
-  }
-body {
-    text-align: center;
-    width: 100%
-}
-.typenerd {
-    text-transform: uppercase;
+.text {
+  font-family: "Letrastica";
+  font-variation-settings: "wght" var(--wght);
+  font-size: 500px;
+  height: 100px;
+  line-height: 90px;
+  pointer-events: none;
 }
 
-@keyframes variacion {
-    0% {
-        font-weight: 30;
-    }
-    50% {
-        font-weight: 320;
-    } 
-    100% {
-        font-weight: 30;
-    }
-}
+/* Non Demo Related Code */
 
-@keyframes colores {
-    0% {
-        color: rgb(224, 125, 11);
-    }
-    50% {
-        color: rgb(11, 43, 224);
-    } 
-    100% {
-        color: rgb(224, 125, 11);
-    }
+
+
+
+
+.contain {
+  max-width: 100%;
+  margin: 2rem auto;
+  padding-left: 1em;
+  padding-right: 1em;
 }
